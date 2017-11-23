@@ -1,0 +1,6 @@
+[submodule "lib"]
+	path = lib
+	url = https://github.com/k5342/minecraft-socket
+[submodule "lib/minecraft-socket"]
+	path = lib/minecraft-socket
+	url = https://github.com/k5342/minecraft-socket

@@ -1,0 +1,4 @@
+servers:
+    - name: tskserver
+      host: mc.ksswre.net
+      port: 25565
