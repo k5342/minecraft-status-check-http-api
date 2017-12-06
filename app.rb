@@ -2,6 +2,8 @@ require 'sinatra/base'
 require 'sinatra/json'
 require 'sinatra/config_file'
 
+require 'timeout'
+
 require_relative 'lib/minecraft-socket/lib/minecraft-socket.rb'
 
 class App < Sinatra::Base
@@ -15,11 +17,12 @@ class App < Sinatra::Base
     }
     
     begin
-      s = Minecraft::Session.new(host, port, 3)
-      d = s.fetch_status
-      
-      result[:status] = :online
-      result[:body] = d[:data]
+      Timeout.timeout(5) {
+        s = Minecraft::Session.new(host, port, 3)
+        d = s.fetch_status
+        result[:status] = :online
+        result[:body] = d[:data]
+      }
     rescue StandardError => e
       result[:status] = :offline
       result[:body] = {
