@@ -17,7 +17,7 @@ class App < Sinatra::Base
     }
     
     begin
-      Timeout.timeout(5) {
+      Timeout.timeout(10) {
         s = Minecraft::Session.new(host, port, 3)
         d = s.fetch_status
         result[:status] = :online
