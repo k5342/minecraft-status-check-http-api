@@ -2,7 +2,7 @@
 This API can check your Minecraft server status using Minecraft protocol without any server plugins
 and provide server status HTTP API in JSON.
 
-This API is used in [mc.ksswre.net](mc.ksswre.net) and [its notification bot](https://github.com/k5342/tskserver-notification-bot)
+This API is used in [tskserver](https://mc.ksswre.net) and [its notification bot](https://github.com/k5342/tskserver-notification-bot)
 
 ## example
 
