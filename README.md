@@ -37,7 +37,7 @@ This API is used in [tskserver](https://mc.ksswre.net) and [its notification bot
 ```
 
 ## dependencies
-* [minecraft-socket](github.com/k5342/minecraft-socket)
+* [k5342/minecraft-socket](https://github.com/k5342/minecraft-socket)
 
 ## Setup
 
