@@ -1,9 +1,8 @@
-# tskserver-status-checker
-tskserver is a Minecraft server (running with Spigot).
+# minecraft-status-check-http-api
 This API can check your Minecraft server status using Minecraft protocol without any server plugins
 and provide server status HTTP API in JSON.
 
-This API is used in [mc.ksswre.net](mc.ksswre.net)
+This API is used in [mc.ksswre.net](mc.ksswre.net) and [its notification bot](https://github.com/k5342/tskserver-notification-bot)
 
 ## example
 
